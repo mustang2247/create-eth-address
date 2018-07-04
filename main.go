@@ -12,16 +12,14 @@ var key *keystore.KeyStore
 var password *string
 
 func main()  {
-
 	password = flag.String("pw", "123456", "")
 	flag.Parse()
 
 	fmt.Println("pw:  " + *password)
 	key = keystore.NewKeyStore("./keystores", keystore.StandardScryptN, keystore.LightScryptP)
-	for i := 0; i < 200; i++  {
+	for i := 0; i < 500; i++  {
 		newAccount()
 	}
-
 }
 
 func newAccount()  {
