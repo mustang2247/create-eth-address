@@ -52,6 +52,12 @@ func createKs(password string) {
 
 
 	fmt.Println(account.Address.Hex() + "	" + privateKey)
+
+
+	//secp256k1.Sign()
+
+
+
 }
 
 
