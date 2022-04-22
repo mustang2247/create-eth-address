@@ -3,12 +3,13 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/crypto"
 	"io"
 	"io/ioutil"
 	"log"
 	"os"
+
+	"github.com/ethereum/go-ethereum/accounts/keystore"
+	"github.com/ethereum/go-ethereum/crypto"
 )
 
 var key *keystore.KeyStore
