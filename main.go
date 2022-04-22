@@ -49,7 +49,10 @@ func createKs(password string) {
 
 	fd, _ := os.OpenFile("./keystores/addr.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0644)
 	s := fmt.Sprintf("%s\n", account.Address.Hex()+"	"+privateKey)
-	io.WriteString(fd, s)
+	_, err = io.WriteString(fd, s)
+	if err != nil {
+		return
+	}
 
 	fmt.Println(account.Address.Hex() + "	" + privateKey)
 
