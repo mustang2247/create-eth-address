@@ -21,7 +21,7 @@ func main() {
 	//fmt.Println("pw:  " + *password)
 	//key = keystore.NewKeyStore("./keystores", keystore.StandardScryptN, keystore.LightScryptP)
 	key = keystore.NewKeyStore("./keystores", keystore.StandardScryptN, keystore.StandardScryptP)
-	for i := 0; i < 500; i++ {
+	for i := 0; i < 20; i++ {
 		//newAccount()
 		createKs("123456")
 	}
